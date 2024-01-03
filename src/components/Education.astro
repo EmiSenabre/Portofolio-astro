@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EDUCATION = [
+  {
+    date: "2020 - 2022",
+    title: "Técnico Superior Desarrollo de Aplicaciones Multiplataforma − IES Poeta Paco Mollá",
+    description:
+      "",
+    //link: "https://www.linkedin.com/in/emilio-senabre-l%C3%B3pez/",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EDUCATION.map((educación) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...educación} />
+      </li>
+    ))
+  }
+</ol>

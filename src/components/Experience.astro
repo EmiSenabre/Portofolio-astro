@@ -1,0 +1,34 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Diciembre 2023 - Actualmente",
+    title: "Developer − Ntt Data",
+    description:
+      "Proyecto de mantenimiento y nuevos desarrollos para aplicación de gestiones internas de un banco de la cual a través de la API Rest cogen la información las demás aplicaciones. Tecnologías utilizadas: Java, Spring Boot, JSP, Javascript, jQuery, Oracle PL/SQL, Gradle, Maven, REST. Uso de Jira y Git",
+    //link: "https://www.linkedin.com/in/emilio-senabre-l%C3%B3pez/",
+  },
+  {
+    date: "Noviembre 2022 - Noviembre 2023",
+    title: "Junior Developer  − Ntt Data",
+    description:
+      "Desarrollo en una plataforma de Educación trabajando con Java Spring Boot, JSP, javascript y PL/SQL. Uso de Jira y Git",
+  },
+  {
+    date: "Marzo 2022 - Mayo 2022",
+    title: "Sage X3 Solutions Developer(Prácticas)  − Verne Technology Group",
+    description:
+      "Desarrollos con Sage X3",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
