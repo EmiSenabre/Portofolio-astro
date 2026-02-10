@@ -18,9 +18,7 @@ const { title, description, link, date } = Astro.props
 <h3 class="text-lg font-semibold text-yellow-800 dark:text-yellow-200 mt-2">
   {title}
 </h3>
-<p class="mb-4 text-base font-normal dark:text-gray-200 text-pretty whitespace-pre-line">
-  {description}
-</p>
+<div class="mb-4 text-base font-normal dark:text-gray-200 text-pretty [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-1 [&_p]:mb-4 [&_strong]:text-yellow-600 dark:[&_strong]:text-yellow-100" set:html={description} />
 {
   link && (
     <a
